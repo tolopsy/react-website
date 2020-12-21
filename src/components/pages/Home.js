@@ -1,17 +1,26 @@
 import React, {Component} from 'react';
 
+import Header from '../Common/Header';
+import Services from '../Common/Services';
+import Portfolio from '../Common/Portfolio';
+import image from '../assets/img/header-bg.jpg'
+
 class Home extends Component {
     render(){
         return(
             <div>
-                <header class="masthead">
-                    <div class="container">
-                        <div class="masthead-subheading">Welcome To Our Studio!</div>
-                        <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
-                        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
-                    </div>
-                </header>
+                <Header
+                    title="Welcome to our studio!"
+                    subtitle="IT'S NICE TO MEET YOU"
+                    buttonText="Tell me more"
+                    link='/services'
+                    showButton={true}
+                    image={image}
+                />
+                <Services />
+                <Portfolio />
             </div>
+
         );
     }
 }
