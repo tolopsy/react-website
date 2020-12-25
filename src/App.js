@@ -6,6 +6,7 @@ import {BrowserRouter as Router, Route} from 'react-router-dom'
 //pages
 import Home from './components/pages/Home';
 import About from './components/pages/About';
+import Contact from './components/pages/Contact';
 import Services from './components/Common/Services';
 class App extends Component {
   render(){
@@ -28,6 +29,11 @@ class App extends Component {
             component={Services}
           />
 
+          <Route 
+            path='/contact'
+            component={Contact}  
+          />
+
           <Route
             path='/a'
             render={() => {
@@ -36,6 +42,7 @@ class App extends Component {
               )
             }}
           />
+
         </PageWrapper>
       </Router>
     );
