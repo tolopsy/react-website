@@ -4,8 +4,7 @@ import {Link} from 'react-router-dom';
 class PageWrapper extends Component {
     render(){
         return (
-            <div>
-                
+            <div>        
                 <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
                     <div className="container">
                         <Link className="navbar-brand js-scroll-trigger" to="#page-top"><img src="assets/img/navbar-logo.svg" alt="" /></Link>
