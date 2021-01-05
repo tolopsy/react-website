@@ -21,6 +21,7 @@ class Home extends Component {
                 <Services />
                 <Portfolio />
                 <Teams />
+                
             </div>
 
         );
